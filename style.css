@@ -88,9 +88,9 @@ body {
 }
 .task-stats .tasks-completed {
   width: 50%;
-  float: right;
+  float: left;
   padding: 10px;
-  text-align: right;
+  text-align: left;
 }
 .task-stats .tasks-count span,
 .task-stats .tasks-completed span {
@@ -105,4 +105,58 @@ body {
 }
 .task-stats .tasks-completed span {
   background-color: #03A9F4;
+}
+
+/*completd*/
+
+.completed-container {
+  margin: 30px auto 0;
+  background-color: #F6F6F6;
+  width: 600px;
+}
+.completed-container .completed {
+  padding: 15px;
+  background-color: #009688;
+  position: relative;
+}
+.completed-container .completed input {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  background-color: rgba(255, 255, 255, .3);
+  width: calc(100% - 15px);
+  color: #FFF;
+  font-size: 20px;
+}
+.completed-container .completed input:focus {
+  outline: none;
+}
+
+.completed-container .Ctasks-content {
+  padding: 15px;
+}
+.completed-container .Ctasks-content .no-tasks-message {
+  color: #777;
+  font-size: 15px;
+}
+.completed-container .Ctasks-content > span {
+  display: block;
+  background-color: #FFF;
+  padding: 10px;
+}
+.todo-container .Ctasks-content > span:not(:last-child) {
+  margin-bottom: 10px;
+}
+.completed-container .Ctasks-content .task-box .delete {
+  float: right;
+  background-color: #E91E63;
+  padding: 4px 10px;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.completed-container .Ctasks-content .task-box.finished {
+  text-decoration: line-through;
 }
